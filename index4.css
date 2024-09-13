@@ -6,7 +6,6 @@
 
 header{
     background-color: rgb(77, 20, 20);
-    justify-content: flex-end;
     align-items: center;
     position: fixed;
     display: flex;
