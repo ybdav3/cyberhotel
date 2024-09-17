@@ -1,10 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-header{
+header {
     background-color: rgb(77, 20, 20);
     align-items: center;
     position: fixed;
@@ -14,17 +14,17 @@ header{
     width: 100%;
 }
 
-#logo{
+#logo {
     margin-right: auto;
-    font-size: 2em; 
+    font-size: 2em;
     padding: 60px;
     margin-bottom: 5px;
     color: white;
     padding-bottom: 50px;
-    
+
 }
 
-header li{
+header li {
     list-style: none;
     display: inline-block;
     padding: 5px 5px;
@@ -32,71 +32,150 @@ header li{
     margin-left: 70px;
     margin: 10px;
     padding-right: 10px;
-    
+
 
 }
 
-header ul li a{
+header ul li a {
     text-decoration: none;
     color: white;
     padding: 10px;
 }
 
-header nav ul li .active{
+header nav ul li .active {
     background-color: black;
-} 
+}
 
-header ul li a:hover{
+header ul li a:hover {
     background-color: black;
     border-radius: 5px;
     transition: 0.7s ease;
 }
 
-.main{
-    background-image: linear-gradient(rgba(0,0,0,0.60),rgba(0,0,0,0.60)), url(random-best-photo_865967-169267.jpeg);
+nav .toggle-btn {
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+    position: relative;
+}
+
+.main {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url(random-best-photo_865967-169267.jpeg);
     min-height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.main h1{
+.main h1 {
     color: white;
     text-align: center;
     padding-top: 230px;
     font-size: 50px;
 }
 
-.main h2{
+.main h2 {
     color: white;
     text-align: center;
     padding-top: 30px;
 }
 
-.container{
+.container {
     width: 100%;
 }
 
-.container2{
+.container2 {
     width: 100%;
 }
 
-.our-guests{
-    background-image: linear-gradient(rgba(0,0,0,0.60),rgba(0,0,0,0.60)), url(random-best-photo_865967-169267.jpeg);
+.our-guests {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url(random-best-photo_865967-169267.jpeg);
     min-height: 60vh;
     background-repeat: no-repeat;
     background-size: cover;
-    
+
     margin-left: -120px;
 }
 
-.map{
+.map {
     padding-right: 150px;
 }
 
-.footer{
+.footer {
     background: rgb(87, 15, 15);
     height: 300px;
     padding: 90px;
     padding-bottom: 20px;
     margin-top: 0;
+}
+
+@media (max-width: 600px) {
+    header {
+        width: 100%;
+        position: static;
+        display: flex;
+
+    }
+
+    nav ul,
+    nav ul li a {
+        display: none;
+    }
+
+    #logo {
+        font-size: 20px;
+        float: left;
+        margin: 0 0 0 13px;
+        padding: 0;
+    }
+
+    nav .toggle-btn {
+        display: block;
+        position: relative;
+        left: 200px;
+        margin: 0 13px 0 0;
+        padding: 0;
+    }
+}
+
+@media (min-width: 600px) {
+    nav ul {
+        display: none;
+    }
+
+    #logo {
+        font-size: 19px;
+        float: left;
+        margin: 0 0 0 13px;
+        padding: 0;
+    }
+
+    nav .toggle-btn {
+        display: block;
+        position: relative;
+        left: 150px;
+        margin: 0 13px 0 0;
+        padding: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    nav ul {
+        display: none;
+    }
+
+    #logo {
+        font-size: 15px;
+        float: left;
+        margin: 0 0 0 13px;
+        padding: 0;
+    }
+
+    nav .toggle-btn {
+        display: block;
+        position: relative;
+        left: 130px;
+        margin: 0 13px 0 0;
+        padding: 0;
+    }
 }
